@@ -41,6 +41,25 @@ Motivated Software Engineer with a background in Chemical Engineering and a stro
 - Docker
 - Microsoft Office (MS Office)
 
+### Code Example
+
+fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      let authors = data;
+
+      authors.map(function(author) {
+        let li = document.createElement('li');
+        let name = document.createElement('h2');
+        let email = document.createElement('span');
+
+        name.innerHTML = `${author.name}`;
+        email.innerHTML = `${author.email}`;
+      });
+    })
+
 ## Work Experience
 
 - **Self-employed, Chinese Language Teacher** _(2019 - Present)_
