@@ -2,211 +2,263 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-
     <script
       src="https://kit.fontawesome.com/499a2233d3.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="container">
-      <div class="top">
-        <div class="imgBx">
+    <main>
+      <section class="container">
+        <!-- Header section -->
+        <section class="top">
+          <!-- Profile Image -->
           <div class="box">
-            <img src="img.jpg" class="custom-image" />
+            <img
+              src="assets/img.jpg"
+              class="custom-image"
+              alt="my-profile-pic"
+            />
+          </div>
+
+          <!-- Profile Text -->
+          <div class="profileText">
+            <h3>Peifang Luo <br /><span>Full Stack Software Engineer</span></h3>
+          </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="contentBox">
+          <!-- Left Side -->
+          <section class="leftSide">
+            <!-- Contact Info -->
+            <h3>Contact Info</h3>
+            <ul class="contact-info">
+              <li>
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <a
+                  href="mailto:isabellhepburn@outlook.com"
+                  class="text"
+                  target="_blank"
+                  >isabellhepburn@outlook.com</a
+                >
+              </li>
+              <li>
+                <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                <a
+                  href="https://www.linkedin.com/in/peifang-luo-dev/"
+                  class="text"
+                  target="_blank"
+                  >LinkedIn Profile</a
+                >
+              </li>
+              <li>
+                <span class="icon"><i class="fa-brands fa-github"></i></span>
+                <a
+                  href="https://github.com/117Isabell"
+                  class="text"
+                  target="_blank"
+                  >GitHub Profile</a
+                >
+              </li>
+              <li>
+                <span class="icon"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <span class="text">Europe</span>
+              </li>
+            </ul>
+
+            <!-- Education -->
+            <h3>Education</h3>
+
+            <ul class="list">
+              <li><h5>2015 - 2019</h5></li>
+              <li><h4>B.A. in Chemical Engineering</h4></li>
+              <li>
+                <h6>Central South University of Forestry and Technology</h6>
+              </li>
+            </ul>
+
+            <ul class="list">
+              <li><h5>2023 - 2026</h5></li>
+              <li><h4>Expected MSc in Computer Science</h4></li>
+              <li><h6>University of London</h6></li>
+            </ul>
+
+            <!-- Technical Skills -->
+            <section class="about">
+              <h3>Technical Skills</h3>
+              <ul class="skills">
+                <li>HTML, CSS, Bootstrap</li>
+                <li>JS, React JS</li>
+                <li>Python Basics,SQL Basics</li>
+                <li>Git, GitHub</li>
+              </ul>
+              <h3>Frameworks & Libraries</h3>
+              <ul class="skills">
+                <li>ReactJS</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Bootstrap</li>
+              </ul>
+            </section>
+
+            <!-- Language Proficiency -->
+            <section>
+              <h3>Language</h3>
+              <ul class="languages">
+                <li>
+                  <span class="language">
+                    <span class="text">Chinese</span>
+                    <span class="percent" style="width: 100%"></span>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="language">
+                    <span class="text">English</span>
+                    <span class="percent" style="width: 85%"></span>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="language">
+                    <span class="text">Korean</span>
+                    <span class="percent" style="width: 65%"></span>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="language">
+                    <span class="text">Hungarian</span>
+                    <span class="percent" style="width: 55%"></span>
+                  </span>
+                </li>
+              </ul>
+            </section>
+          </section>
+
+          <!-- Right Side -->
+          <section class="rightSide">
+            <!-- Profile Section -->
+            <div class="about profile">
+              <h3>Profile</h3>
+              <p>
+                I'm skilled in HTML, CSS, JavaScript, Bootstrap, and React. I
+                also have experience with Python and SQL. I'm eager to
+                contribute as a remote junior frontend developer while pursuing
+                an MSc in Computer Science. <br />
+                <br />Thriving in dynamic environments, I have a passion for
+                learning new technologies and continuously improving my skills.
+                I'm excited to collaborate and create exceptional web
+                experiences.
+              </p>
+            </div>
+
+            <!-- Courses on Going -->
+            <h3>Courses on Going</h3>
+            <ul class="courses">
+              <li>Meta Front-End Developer Professional Certificate</li>
+              <li>Meta Back-End Developer Professional Certificate</li>
+              <li>
+                IBM Full Stack Software Developer Professional Certificate
+              </li>
+            </ul>
+
+            <!-- Work Experience -->
+            <section>
+              <h3>Work Experience</h3>
+              <div class="about">
+                <h4>2019.05 - 2019.09</h4>
+                <span>Liangxing Trade Company, Alibaba Trade Worker</span>
+                <ul>
+                  <li>Analyzing students’ levels and tailoring curriculum.</li>
+                  <li>Utilizing various teaching methods and platforms.</li>
+                  <li>
+                    Engaging in effective communication for feedback and
+                    support.
+                  </li>
+                </ul>
+
+                <h4>2019.09 - Present</h4>
+                <span>Self-employed, Chinese Language Teacher</span>
+                <ul>
+                  <li>Collaborated in teams to promote and sell goods.</li>
+                  <li>Crafted English product descriptions.</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Code example -->
+            <section>
+              <h3>Code example</h3>
+              <pre><code>
+fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      let authors = data;
+
+      authors.map(function(author) {
+        let li = document.createElement('li');
+        let name = document.createElement('h2');
+        let email = document.createElement('span');
+
+        name.innerHTML = `${author.name}`;
+        email.innerHTML = `${author.email}`;
+      });
+    })
+      </code></pre>
+            </section>
+
+            <!-- Tech Projects -->
+            <h3>Tech Projects</h3>
+            <section>
+              <ul>
+                <li>HTML5, CSS, JS - Created a site for learning Chinese.</li>
+                <li>
+                  HTML5, CSS, JS - Creating a site to connect the translator
+                  with clients.(ongoing)
+                </li>
+                <li>
+                  MERN stack - Allows users to add and delete daily
+                  tasks.(ongoing)
+                </li>
+              </ul>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="rss">
+            <a
+              href="https://rs.school/js-en/"
+              class="footer-link rsschool-logo"
+              aria-label="rss"
+              target="_blank"
+            ></a>
+          </div>
+          <div class="year">
+            <time datetime="2023-11-28 00:00">11/2023</time>
+          </div>
+          <div class="github">
+            <a
+              href="https://github.com/117Isabell"
+              class="footer-link github-logo"
+              aria-label="github"
+              target="_blank"
+            ></a>
           </div>
         </div>
-        <div class="profileText">
-          <h3>Peifang Luo <br /><span>Full Stack Software Engineer</span></h3>
-        </div>
-      </div>
-      <div class="contentBox">
-        <div class="leftSide">
-          <h3>Contact Info</h3>
-          <ul>
-            <li>
-              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-              <span class="text">isabellhepburn@outlook.com</span>
-            </li>
-
-            <li>
-              <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
-              <a href="https://www.linkedin.com/in/peifang-luo-a0613324b/" class="text">Linkedin Profile</a>
-
-            </li>
-
-            <li>
-              <span class="icon"><i class="fa-brands fa-github"></i></span>
-              <!-- <span class="text"></span> -->
-              <a href="https://github.com/117Isabell" class="text">GitHub Profile</a>
-
-            </li>
-
-            <li>
-              <span class="icon"><i class="fa-solid fa-location-dot"></i></i></span>
-              <span class="text">Budapest, Hungary</span>
-            </li>
-          </ul>
-
-          <h3>Education</h3>
-          <ul class="education">
-            <ul class="list">
-                <li><h5>2015 - 2019</h5></li>
-                <li><h4>B.A. in Chemical Engineering</h4></li>
-                <li><h6>Central South University of Forestry and Technology</h6></li>
-            </ul>
-        
-    
-
-          <ul class="list">
-                <li><h5>2023 - 2026</h5></li>
-                <li><h4> Expected MSc in Computer Science</h4></li>
-                <li><h6>University of London</h6></li>
-            </ul>
-          </ul>
-
-
-           <div class="about">
-                <h3>Skills</h3>
-                <ul class="skills">
-                    <li>HTML, CSS, Bootstrap</li>
-                    <li>JS, React JS</li>
-                    <li>Python Basics,SQL Basics</li>
-                    <li>Git, GitHub</li>
-                </ul>
-            </div>
-
-          <!-- <h3>Language</h3>
-          <ul class="laguages">
-            <li>
-                <div>
-                <span class="text">Chinese</span> 
-               
-                <span class="percent">
-                    <div style="width: 100%"></div>
-                </span>
-                </div>
-            </li>
-
-             <li>
-                 <div>
-                <span class="text">English</span>
-                <span class="percent">
-                    <div style="width: 85%"></div>
-                </span>
-                
-                </div>
-            </li>
-
-             <li>
-                <div>
-                <span class="text">Korean</span>
-                <span class="percent">
-                    <div style="width: 65%"></div>
-                </span>
-                </div>
-            </li>
-
-             <li>
-                <div>
-                <span class="text">Hungarian</span>
-                <span class="percent">
-                    <div style="width: 55%"></div>
-                </span>
-                </div>
-
-            </li>
-          </ul> -->
-
-        </div>
-
-
-        <div class="rightSide">
-            <div class="about profile">
-                <h3>Profile</h3>
-                <p> I'm skilled in HTML, CSS, JavaScript, Bootstrap, and React. I also have experience with Python and SQL. I'm eager to contribute as a remote junior frontend developer while pursuing an MSc in Computer Science. <br> <br>Thriving in dynamic environments, I have a passion for learning new technologies and continuously improving my skills. I'm excited to collaborate and create exceptional web experiences.</p>
-            </div>
-
-            
-          <h3>Courses on Going</h3>
-          <ul class="courses">
-            <li>Meta Front-End Developer Professional Certificate</li>
-            <li>Meta Back-End Developer Professional Certificate</li>
-            <li>IBM Full Stack Software Developer Professional Certificate</li>
-          </ul>
-
-           
-         
-
-
-           <div class="about">
-                <h3>Work Experience</h3>
-                <!-- <div class="box">
-                    <div class="year-company">
-                        <h5>2019.05 - 2019.07</h5>
-                    </div>
-                    <p>Yiduiyi, online English Teacher</p>
-                </div>
-
-                 <div class="box">
-                    <div class="year-company">
-                        <h5>2019.08 - 2019.09</h5>
-                    </div>
-                    <p>Liangxing Trade Company, Alibaba Trade Worker</p>
-                </div>
-
-                 <div class="box">
-                    <div class="year-company">
-                        <h5>2019.09 - Present</h5>
-                    </div>
-                    <p>Self-employed, Chinese Language Teacher</p>
-                </div>
-
-            </div> -->
-
-            <!-- <div class="about"> -->
-                <div>
-                    <ul>
-                      <div class="about">
-                        <li>2019.05 - 2019.09 </li>
-                        <P>Liangxing Trade Company, Alibaba Trade Worker</P>
-
-                         <li>2019.09 - Present</li>
-                        <P>Self-employed, Chinese Language Teacher</P>
-                        </div>
-                    </ul>
-                </div>
-
-            </div>
-          
-
-        </div>
-      </div>
-    </div>
-
-    <button>Print</button>
-    <script>
-      var btn = document.querySelector('button');
-      btn.onclick = () => {
-        window.print()
-      }
-    </script>
-    <footer class="footer">
-    <div class="wrapper">
-      <div class="rss">
-        <a href="https://rs.school/js-en/" class="footer-link rsschool-logo" aria-label="rss"></a>
-      </div>
-      <div class="year">
-        <time datetime="2023-11-8 00:00">2023</time>
-      </div>
-      <div class="github">
-        <a href="https://github.com/117Isabell" class="footer-link github-logo" aria-label="github"></a>
-      </div>
-    </div>
-  </footer>
+      </footer>
+    </main>
+    <!-- Footer -->
   </body>
 </html>
