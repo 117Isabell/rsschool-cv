@@ -38,6 +38,7 @@ Motivated Software Engineer with a background in Chemical Engineering and a stro
 ### Tools & Other
 
 - MongoDB
+- Firebase
 - Docker
 - Microsoft Office (MS Office)
 
