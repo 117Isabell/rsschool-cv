@@ -44,6 +44,7 @@ body {
   filter: grayscale(0.2) brightness(1.05);
   transition: 0.3s;
 }
+
 footer {
   display: flex;
   justify-content: space-around;
